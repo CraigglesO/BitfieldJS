@@ -16,9 +16,7 @@ npm install BitfieldJS
 const Bitfield = require('Bitfield');
 
 // Set 100 bits (64 in hex -> 2 bytes or 8 bits)
-// Bitfield {
-//   grow: 0,
-//   buffer: <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00> }
+
 cost bf = new Bitfield(100);
 set(1) -> set the second bit;
 set(2) -> set the third bit;
@@ -26,7 +24,10 @@ set(2) -> set the third bit;
 //   grow: 0,
 //   buffer: <Buffer 60 00 00 00 00 00 00 00 00 00 00 00 00> }
 
+
+
 // Let's say the number of pieces in the torrent is 2:
+
 const bf = New Bitfield(0);
 set(0);  // 80
 set(1);  // c0
@@ -43,6 +44,7 @@ set(1, false); //
 
 // Find the value of a bit:
 get(1); // true
+
 
 
 // Lastly we can set a maximum size:

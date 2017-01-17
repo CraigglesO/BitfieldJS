@@ -1,7 +1,7 @@
 {
   "name":"bitfieldjs",
-  "version":"2.1.7",
-  "description":"Bitfield System for P2P network",
+  "version":"2.1.9",
+  "description":"Bitfield System for Bittorrent Protocol",
   "main":"BitfieldJS.js",
   "scripts": {
     "test":"echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   "author":"Craig OConnor",
   "repository": {
     "type":"git",
-    "url":""
+    "url":"https://github.com/CraigglesO/BitfieldJS.git"
   },
   "license":"ISC",
   "devDependencies": {
