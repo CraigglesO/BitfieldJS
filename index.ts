@@ -1,7 +1,12 @@
 import Bitfield from './BitfieldJS';
 
-let x = new Bitfield('A5229196E4B42CF3160EDB1EC17F295495BAD78608D0E61E3A863223ED09A9E25B0909FEB9880A00A3DFE0E199A9A78B2BAC');
+let x = new Bitfield(0, {grow:16});
+x.set(15);
+x.set(31);
 console.log(x);
+
+console.log(x.get(2));
+
 
 
 //const buf = Buffer.from('40', 'hex');

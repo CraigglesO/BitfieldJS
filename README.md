@@ -1,8 +1,9 @@
 # BitfieldJS
 
-### Bitfield System for P2P Network
+### Bitfield System for Bittorrent Protocol
 
-INFORMATION_GOES_HERE
+Easily convert hex input to a Bittorent Protocol bitfield.
+Each bit represents a piece.
 
 ## Install
 
@@ -12,9 +13,47 @@ npm install BitfieldJS
 
 ## Usage
 ```
-EXAMPLE_USAGE_GOES_HERE
+const Bitfield = require('Bitfield');
 
+// Set 100 bits (64 in hex -> 2 bytes or 8 bits)
+// Bitfield {
+//   grow: 0,
+//   buffer: <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00> }
+cost bf = new Bitfield(100);
+set(1) -> set the second bit;
+set(2) -> set the third bit;
+// Bitfield {
+//   grow: 0,
+//   buffer: <Buffer 60 00 00 00 00 00 00 00 00 00 00 00 00> }
+
+// Let's say the number of pieces in the torrent is 2:
+const bf = New Bitfield(0);
+set(0);  // 80
+set(1);  // c0
+// Bitfield { grow: 0, buffer: <Buffer c0> }
+
+
+
+// Equivalent:
+set(1, true); // 80
+set(1);       // 80
+
+// Remove a bit:
+set(1, false); //
+
+// Find the value of a bit:
+get(1); // true
+
+
+// Lastly we can set a maximum size:
+const bf = New Bitfield(0, { grow: 16 }); // Bitfield { grow: 2, buffer: <Buffer > }
+bf.set(15); // Bitfield { grow: 2, buffer: <Buffer 00 01> }
+bf.set(35); // Bitfield { grow: 2, buffer: <Buffer 00 01> }
+
+// NOTICE that a bit too large is ignored.
 ```
+
+Happy coding kids.
 
 ## ISC License (Open Source Initiative)
 
