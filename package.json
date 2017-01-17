@@ -1,0 +1,23 @@
+{
+  "name":"bitfieldjs",
+  "version":"2.1.7",
+  "description":"Bitfield System for P2P network",
+  "main":"BitfieldJS.js",
+  "scripts": {
+    "test":"echo \"Error: no test specified\" && exit 1",
+    "start":"npm run build:live",
+    "build:live":"nodemon --exec ./node_modules/.bin/ts-node -- ./BitfieldJS.ts"
+  },
+  "author":"Craig OConnor",
+  "repository": {
+    "type":"git",
+    "url":""
+  },
+  "license":"ISC",
+  "devDependencies": {
+    "@types/node":"^7.0.0",
+    "nodemon":"^1.11.0",
+    "ts-node":"^2.0.0",
+    "typescript":"^2.1.5"
+  }
+}
