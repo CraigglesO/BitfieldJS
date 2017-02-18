@@ -1,5 +1,7 @@
 # BitfieldJS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CraigglesO/BitfieldJS.svg)](https://greenkeeper.io/)
+
 ### Bitfield System for Bittorrent Protocol
 
 Easily convert hex input to a Bittorent Protocol bitfield.
